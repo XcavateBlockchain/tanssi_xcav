@@ -269,6 +269,26 @@ cumulus-test-relay-sproof-builder = { git = "https://github.com/moondance-labs/p
 emulated-integration-tests-common = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0" }
 xcm-emulator = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
 
+pallet-insecure-randomness-collective-flip = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+pallet-nfts = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+pallet-nft-fractionalization = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+node-primitives = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+pallet-collective = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+pallet-bounties = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+pallet-child-bounties = { git = "https://github.com/moondance-labs/polkadot-sdk", branch = "tanssi-polkadot-v1.11.0", default-features = false }
+
+
+
+
+# Custom Pallets
+pallet-xcavate-whitelist = { path = "pallets/xcavate-whitelist", default-features = false }
+pallet-nft-marketplace = {path = "pallets/nft-marketplace", default-features = false}
+pallet-property-management = {path = "pallets/property-management", default-features = false}
+pallet-property-governance = { path = "pallets/property-governance", default-features = false}
+pallet-xcavate-staking = { path = "pallets/xcavate-staking", default-features = false}
+pallet-community-loan-pool = { path = "pallets/community-loan-pool", default-features = false}
+pallet-community-projects = { path = "pallets/community-projects", default-features = false}
+
 # Frontier (wasm)
 fp-account = { git = "https://github.com/moondance-labs/frontier", branch = "tanssi-polkadot-v1.11.0", default-features = false }
 fp-evm = { git = "https://github.com/moondance-labs/frontier", branch = "tanssi-polkadot-v1.11.0", default-features = false }
