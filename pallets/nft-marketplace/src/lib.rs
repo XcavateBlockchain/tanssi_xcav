@@ -1362,7 +1362,7 @@ pub mod pallet {
                 TryInto::<u32>::try_into(amount).map_err(|_| Error::<T>::ConversionError)?;
             let origin: OriginFor<T> = RawOrigin::Signed(from).into();
             let account_lookup = <T::Lookup as StaticLookup>::unlookup(to);
-            let asset_id: AssetId2<T> = 1.into();
+            let asset_id: AssetId2<T> = 4.into();
             let token_amount = u32_amunt.into();
             Ok(pallet_assets::Pallet::<T, Instance2>::transfer(
                 origin,
